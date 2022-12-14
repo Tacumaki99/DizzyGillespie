@@ -203,6 +203,94 @@ body {
     color: #ccc;
   }
 
+  
+.section-parts_title {
+    color: #211515;
+    text-align: center;
+}
+  
+.section-parts {
+    background: #08bdbe;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+#discography {
+    background: #00abb0;
+}
+  
+#biography {
+    background: #009a9a;
+}
+
+#discography1 {
+    background: #008488;
+}
+
+#discography2 {
+    background: #026278;
+}
+
+  .plan--highlighted {
+    background: #19b84c;
+    color: white;
+  }
+  
+  .plan__annotation {
+    background: white;
+    color: #19b84c;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  
+  .plan__title {
+    color: #0e4f1f;
+  }
+  
+  .plan__price {
+    color: #858585;
+  }
+  
+  .plan--highlighted .plan__title {
+    color: white;
+  }
+  
+  .plan--highlighted .plan__price {
+    color: #0e4f1f;
+  }
+  
+  .plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .plan__feature {
+    margin: 0.5rem 0;
+  }
+  
+  @media (min-width: 40rem) {
+    .plan__list { 
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .plan {
+      width: 30%;
+      min-width: 13rem;
+      max-width: 25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 28rem;
+    }
+  
+  }
 @media(min-width:40rem) {
     .main-nav{
         display: flex;

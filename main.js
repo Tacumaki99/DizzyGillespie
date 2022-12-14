@@ -55,7 +55,7 @@ backdrop.addEventListener("click", function() {
   //mobileNav
 // Nav menu
 
-
+// quoteSlider
 let slideIndex = 0;
 quoteSlidesShow();
 
@@ -70,3 +70,4 @@ function quoteSlidesShow() {
   quoteSlides[slideIndex-1].style.display = "block";  
   setTimeout(quoteSlidesShow, 4000); // Change image every 2 seconds
 }
+// quoteSlider
