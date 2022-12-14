@@ -49,3 +49,19 @@ backdrop.addEventListener("click", function() {
   });
   //mobileNav
 // Nav menu
+
+
+let slideIndex = 0;
+quoteSlidesShow();
+
+function quoteSlidesShow() {
+  let i;
+  let quoteSlides = document.getElementsByClassName("quotes-slider");
+  for (i = 0; i < quoteSlides.length; i++) {
+    quoteSlides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > quoteSlides.length) {slideIndex = 1}    
+  quoteSlides[slideIndex-1].style.display = "block";  
+  setTimeout(quoteSlidesShow, 4000); // Change image every 2 seconds
+}
