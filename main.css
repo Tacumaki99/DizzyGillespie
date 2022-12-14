@@ -155,10 +155,10 @@ body {
 
 .quotes-slider {
     position: absolute;
-    top: 20%;
+    top: 4.8rem;
     right: 3%;
     color: white;
-    width: 30%;
+    width: 35%;
     text-align: center;
 }
   

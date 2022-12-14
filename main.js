@@ -4,11 +4,11 @@ const $mobile_nav__item = $('.mobile-nav__items');
 
 const nav__item = [
     {
-        linkHref:"#top",
+        linkHref:"index.html",
         linkName:"Home"
     },
     {
-        linkHref:"",
+        linkHref:"#gallery",
         linkName:"Gallery"
     },
     {
@@ -44,6 +44,11 @@ toggleButton.addEventListener("click", function() {
   });
 
 backdrop.addEventListener("click", function() {
+    mobileNav.classList.remove("open");
+    backdrop.classList.remove("open");
+  });
+
+  document.querySelector('.mobile-nav__item').addEventListener("click", function() {
     mobileNav.classList.remove("open");
     backdrop.classList.remove("open");
   });
