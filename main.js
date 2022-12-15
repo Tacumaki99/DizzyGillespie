@@ -95,9 +95,9 @@ const gallery_items__img = [
     text: "Dizzy Gillespie first time in Belgrade",
   },
   {
-    src: 'img/belgradeJazzFestival.jpg',
-    alt: 'John Birks Dizzy Gillespie',
-    text: "Dizzy Gillespie first time in Belgrade",
+    src: 'img/DizzyGillespieBalloonCheeks.jpg',
+    alt: 'Dizzy Gillespie`s Balloon Cheeks',
+    text: "He was know for his balloon cheeks. His mouth's buccinator muscles that line the cheeks were very streched and deformed.",
   }
 ];
 
