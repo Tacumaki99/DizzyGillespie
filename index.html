@@ -1,113 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-        <meta name="author" content="Tamara Pavlović"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="John Birks Dizzy Gillespie, gallery and life discography"/>
-        <meta name="keywords" content="John Birks Dizzy Gillespie, Dizzy Gillespie, Birks' Work, Anthropology,Groovin' High, Desefinado"/>
-        <title>Dizzy Gillespie</title>
-        <link rel="shortcut icon" href="favicon-trumpet_player.png"/>
-        <link rel="stylesheet" href="main.css"/>
-    </head>
-    <body>
-        <div class="backdrop"></div>
-        <header id="main-header">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Tamara Pavlović" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="John Birks Dizzy Gillespie, gallery and life discography"
+    />
+    <meta
+      name="keywords"
+      content="John Birks Dizzy Gillespie, Dizzy Gillespie, Birks' Work, Anthropology,Groovin' High, Desefinado"
+    />
+    <title>Dizzy Gillespie</title>
+    <link rel="shortcut icon" href="favicon-trumpet_player.png" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <header id="main-header">
+      <div>
+        <button class="toggle-button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <a href="#main-header" class="main-header__brand">
+          <img
+            src="img/trumpet_player_v2.jpg"
+            alt="Trumpet player silhouette"
+          />
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <!--Content is done through JavaScript => mainNav-->
+        </ul>
+      </nav>
+    </header>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__items">
+        <!--Content is done through JavaScript => mobileNav-->
+      </ul>
+    </nav>
+    <main>
+      <section id="overview">
+        <div class="quotes-slider">
+          <q>I don't care much about music. What I like is sounds.</q>
+        </div>
+        <div class="quotes-slider">
+          <q>It's taken me all my life to learn what not to play.</q>
+        </div>
+        <div class="quotes-slider">
+          <q>The idea of life is to give and receive.</q>
+        </div>
+        <div class="quotes-slider">
+          <q>Jazz will be the classical music of the future.</q>
+        </div>
+        <h1>John Birks Dizzy Gillespie</h1>
+      </section>
+      <section id="gallery" class="section-parts">
+        <h1 id="gallery_title" class="section-parts_title">Gallery</h1>
+        <div class="gallery_items_container">
+        </div>
+      </section>
+      
+      <section id="contact" class="contact_form-section section-parts">
+        <h1 class="contact-title">Contact</h1>
+        <form action="index.html" class="contact-form">
+          <div class="form-row">
             <div>
-                <button class="toggle-button">
-                    <span class="toggle-button__bar"></span>
-                    <span class="toggle-button__bar"></span>
-                    <span class="toggle-button__bar"></span>
-                </button>
-                <a href="#main-header" class="main-header__brand">
-                    <img src="img/trumpet_player_v2.jpg" alt="Trumpet player silhouette">
-                </a>
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" />
             </div>
-            <nav class="main-nav">
-                <ul class="main-nav__items">
-                    <!--Content is done through JavaScript => mainNav-->
-                </ul>
-            </nav>
-        </header>
-        <nav class="mobile-nav">
-            <ul class="mobile-nav__items">
-                <!--Content is done through JavaScript => mobileNav-->
-            </ul>
-        </nav>
-        <main>
-            <section id="overview">
-            <div class="quotes-slider">
-                <q>I don't care much about music. What I like is sounds.</q>
+            <span
+              class="form-err"
+              role="alert"
+              id="firstNameErr"
+              aria-hidden="true"
+            >
+              This field is required
+            </span>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="lastName">Last name</label>
+              <input type="text" id="lastName" />
             </div>
-            <div class="quotes-slider">
-                <q>It's taken me all my life to learn what not to play.</q>
+            <span
+              class="form-err"
+              role="alert"
+              id="lastNameErr"
+              aria-hidden="true"
+            >
+              This field is required
+            </span>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" />
             </div>
-            <div class="quotes-slider">
-                <q>The idea of life is to give and receive.</q>
+            <span
+              class="form-err"
+              role="alert"
+              id="emailErr"
+              aria-hidden="true"
+            >
+              This field is required
+            </span>
+            <span
+              class="form-err"
+              role="alert"
+              id="emailErrValid"
+              aria-hidden="true"
+            >
+              Please enter a valid email address
+            </span>
+          </div>
+          <div class="signup-form__checkbox form-row">
+            <div>
+              <input type="checkbox" id="agreeTerms" required />
+              <label for="agreeTerms"
+                >Agree to
+                <a href="#">Terms &amp; Conditions</a>
+              </label>
             </div>
-            <div class="quotes-slider">
-                <q>Jazz will be the classical music of the future.</q>
-            </div>
-                <h1>John Birks Dizzy Gillespie</h1>
-            </section>
-            <section id="gallery" class="section-parts">
-                <h1 id="gallery_title" class="section-parts_title">Gallery</h1>
-                <div class="gallery_items_container">
-                    
-                </div>
-            </section>
-            <section id="discography" class="section-parts">
-                <h1 id="discography_title" class="section-parts_title">Discography</h1>
-                <div class="discography_items_container">
-                    <div clas="discography_items"></div>
-                </div>
-            </section>
-            <section id="contact" class="contact_form-section section-parts">
-                <h1 class="contact-title">Contact</h1>
-                <form action="index.html" class="contact-form">
-                    <label for="first-name">First name</label>
-                    <input type="text" id="first-name">
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name">
-                    <label for="email">E-Mail</label>
-                    <input type="email" id="email">
-                    <div class="signup-form__checkbox">
-                        <input type="checkbox" id="agree-terms" required>
-                        <label for="agree-terms">Agree to
-                            <a href="#">Terms &amp; Conditions</a>
-                        </label>
-                    </div>
-                    <button type="submit" class="button">Submit</button>
-                </form>
-            </section>
-            <section id="author" class="section-parts">
-                <h1  class="section-parts_title">Author</h1>
-                <div class="author_items_container">
-                    <div clas="author_items">
-                        <img src="img/autor.jpeg">
-                        <p>Hey! My name is Tamara. I am from Belgrade.I'm corrently attendyng Collage of Information and Comunication Technologies. Before collage i finished two high schools, 
-                                Zemunska gymnasium School and Music School "Stankovic". In spare time I play the trumpet and practice karate.</p>
-                        <p>Due to my ardent love of music and my knowledge of music history, I decided to dedicate this project to one of the most commercially influential jazz players of all times.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="main-footer">
-            <nav>
-                <ul class="main-footer__links">
-                    <li class="main-footer__link">
-                        <a href="assets/sitemap.xml">Sitemap</a>
-                    </li>
-                    <li class="main-footer__link">
-                        <a href="#">Dokumentacija</a>
-                    </li>
-                    <li class="main-footer__link">Copyright &#169; Tamara Pavlović 239/20</li>
-                </ul>
-            </nav>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script type="text/javascript" src="main.js"></script>
-    </body>
+            <span
+              class="form-err"
+              role="alert"
+              id="agreeTermsErr"
+              aria-hidden="true"
+            >
+              You must agree to terms and conditions to proceed.
+            </span>
+          </div>
+          <button id="submit" type="submit" class="button">Submit</button>
+        </form>
+      </section>
+      <section id="author" class="section-parts">
+        <h1 class="section-parts_title">Author</h1>
+        <div class="author_items_container">
+          <div clas="author_items">
+            <img src="img/autor.jpeg" />
+            <p>
+              Hey! My name is Tamara. I am from Belgrade.I'm corrently attendyng
+              Collage of Information and Comunication Technologies. Before
+              collage i finished two high schools, Zemunska gymnasium School and
+              Music School "Stankovic". In spare time I play the trumpet and
+              practice karate.
+            </p>
+            <p>
+              Due to my ardent love of music and my knowledge of music history,
+              I decided to dedicate this project to one of the most commercially
+              influential jazz players of all times.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <nav>
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="assets/sitemap.xml">Sitemap</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="#">Dokumentacija</a>
+          </li>
+          <li class="main-footer__link">
+            Copyright &#169; Tamara Pavlović 239/20
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
