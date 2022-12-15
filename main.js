@@ -12,16 +12,16 @@ const nav__item = [
         name:"Gallery"
     },
     {
-        linkHref:"index.html#reviews",
-        linkName:"Discography"
+        href:"#discography",
+        name:"Discography"
     },
     {
-        href:"index.html#contact",
+        href:"#contact",
         name:"Contact"
     },
     {
-        href:"index.html#contact",
-        name:"About"
+        href:"#author",
+        name:"Author"
     }
 ];
  //mainNav
@@ -68,13 +68,14 @@ function quoteSlidesShow() {
   slideIndex++;
   if (slideIndex > quoteSlides.length) {slideIndex = 1}    
   quoteSlides[slideIndex-1].style.display = "block";  
-  setTimeout(quoteSlidesShow, 4000); // Change image every 2 seconds
+  setTimeout(quoteSlidesShow, 4000); 
 };
 // quoteSlider
 
 //gallery
 
 const $gallery_item = $('.gallery_items_container');
+console.log($gallery_item);
 const gallery_items__img = [
   {
       src:"img/dizzygillespie.jpg",
@@ -93,3 +94,8 @@ for(let i in gallery_items__img){
 }
 
 //gallery
+
+var first_name=document.getElementById("first_name"); 
+var last_name=document.getElementById("last_name"); 
+var email=document.getElementById("email");
+var agree_terms = document.getElementById("agree-terms")
