@@ -4,34 +4,34 @@ const $mobile_nav__item = $('.mobile-nav__items');
 
 const nav__item = [
     {
-        linkHref:"index.html",
-        linkName:"Home"
+        href:"index.html",
+        name:"Home"
     },
     {
-        linkHref:"#gallery",
-        linkName:"Gallery"
+        href:"#gallery",
+        name:"Gallery"
     },
     {
         linkHref:"index.html#reviews",
         linkName:"Discography"
     },
     {
-        linkHref:"index.html#contact",
-        linkName:"Contact"
+        href:"index.html#contact",
+        name:"Contact"
     },
     {
-        linkHref:"index.html#contact",
-        linkName:"About"
+        href:"index.html#contact",
+        name:"About"
     }
 ];
  //mainNav
 for(let i in nav__item){
-    $main_nav__item.append(`<li class="main-nav__item"><a href="${nav__item[i].linkHref}">${nav__item[i].linkName}</a></li>`);
+    $main_nav__item.append(`<li class="main-nav__item"><a href="${nav__item[i].href}">${nav__item[i].name}</a></li>`);
 }
  //mainNav
  //mobileNav
  for(let i in nav__item){
-    $mobile_nav__item.append(`<li class="mobile-nav__item"><a href="${nav__item[i].linkHref}">${nav__item[i].linkName}</a></li>`);
+    $mobile_nav__item.append(`<li class="mobile-nav__item"><a href="${nav__item[i].href}">${nav__item[i].name}</a></li>`);
 }
 
 var backdrop = document.querySelector('.backdrop');
@@ -69,5 +69,27 @@ function quoteSlidesShow() {
   if (slideIndex > quoteSlides.length) {slideIndex = 1}    
   quoteSlides[slideIndex-1].style.display = "block";  
   setTimeout(quoteSlidesShow, 4000); // Change image every 2 seconds
-}
+};
 // quoteSlider
+
+//gallery
+
+const $gallery_item = $('.gallery_items_container');
+const gallery_items__img = [
+  {
+      src:"img/dizzygillespie.jpg",
+      alt:"John Birks Dizzy Gillespie",
+      text:"John Birks 'Dizzy' Gillespie was an American jazz trumpeter, bandleader, composer, educator and singer."
+  },
+  {
+    src:"img/belgradeJazzFestival.jpg",
+    alt:"John Birks Dizzy Gillespie",
+    text:"John Birks 'Dizzy' Gillespie was an American jazz trumpeter, bandleader, composer, educator and singer."
+}
+];
+
+for(let i in gallery_items__img){
+  $gallery_item.append(`<div class="gallery_items><img src="${gallery_items__img[i].src}" alt="${gallery_items__img[i].alt}" class="gallery_item_img"/></div>`);
+}
+
+//gallery
