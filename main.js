@@ -12,10 +12,6 @@ const nav__item = [
     name: 'Gallery',
   },
   {
-    href: '#discography',
-    name: 'Discography',
-  },
-  {
     href: '#contact',
     name: 'Contact',
   },
@@ -136,12 +132,24 @@ function validateForm(e) {
     firstNameErr.setAttribute('aria-hidden', false);
     firstName.setAttribute('aria-invalid', true);
   }
+  else {
+    firstNameErr.classList.remove('visible');
+    firstName.classList.remove('invalid');
+    firstNameErr.setAttribute('aria-hidden', true);
+    firstName.setAttribute('aria-invalid', false);
+  }
 
   if (!lastName.value) {
     lastNameErr.classList.add('visible');
     lastName.classList.add('invalid');
     lastNameErr.setAttribute('aria-hidden', false);
     lastNameErr.setAttribute('aria-invalid', true);
+  }
+  else {
+    lastNameErr.classList.remove('visible');
+    lastName.classList.remove('invalid');
+    lastNameErr.setAttribute('aria-hidden', true);
+    lastNameErr.setAttribute('aria-invalid', false);
   }
 
   console.log(email.value);
@@ -162,11 +170,23 @@ function validateForm(e) {
     emailErrValid.setAttribute('aria-hidden', false);
     email.setAttribute('aria-invalid', true);
   }
+  else {
+    emailErrValid.classList.remove('visible');
+    email.classList.remove('invalid');
+    emailErrValid.setAttribute('aria-hidden', true);
+    email.setAttribute('aria-invalid', false);
+  }
 
   if (!agreeTerms.checked) {
     agreeTermsErr.classList.add('visible');
     agreeTerms.classList.add('invalid');
     agreeTermsErr.setAttribute('aria-hidden', false);
     agreeTerms.setAttribute('aria-invalid', true);
+  }
+  else {
+    agreeTermsErr.classList.remove('visible');
+    agreeTerms.classList.remove('invalid');
+    agreeTermsErr.setAttribute('aria-hidden', true);
+    agreeTerms.setAttribute('aria-invalid', false);
   }
 }
