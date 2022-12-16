@@ -86,14 +86,25 @@ const gallery_items__img = [
     text: "John Birks 'Dizzy' Gillespie was an American jazz trumpeter, bandleader, composer, educator and singer.",
   },
   {
-    src: 'img/belgradeJazzFestival.jpg',
+    src: 'img/dizzy-gillespie-beograd-1955.jpg',
     alt: 'John Birks Dizzy Gillespie',
-    text: "Dizzy Gillespie first time in Belgrade",
+    text: "Dizzy Gillespie first time in Belgrade. Dizzy Gillespie had his first concert in Belgrade, 1955. in the premises of Kolarac",
   },
   {
     src: 'img/DizzyGillespieBalloonCheeks.jpg',
     alt: 'Dizzy Gillespie`s Balloon Cheeks',
     text: "He was know for his balloon cheeks. His mouth's buccinator muscles that line the cheeks were very streched and deformed.",
+  },
+  {
+    src: 'img/trumpeter,bandleader.jpg',
+    alt: 'Jazz ansambl',
+    text: "He was a trumpeter, bandleader, composer, educator and singer.",
+  }
+  ,
+  {
+    src: 'img/unique_trumpet.jpg',
+    alt: 'Dizzy Gillespie`s unique trumpet',
+    text: "His unique trumpet desinge comes from accidental damage that happend on stage. The dancers Stump and Stumpy falling onto the instrument while it was on a trumpet stand on stage at Snookie's in Manhattan on January 6. 1953.",
   }
 ];
 
@@ -103,8 +114,14 @@ for (let i in gallery_items__img) {
   );
 }
 
+
+
 //gallery
 
+//discography
+//discography
+
+//contact
 var first_name = document.getElementById('first_name');
 var last_name = document.getElementById('last_name');
 var email = document.getElementById('email');
@@ -190,3 +207,4 @@ function validateForm(e) {
     agreeTerms.setAttribute('aria-invalid', false);
   }
 }
+//contact
