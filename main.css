@@ -179,7 +179,7 @@ main{
   grid-area: main;
   background-color: #211515;
   display: grid;
-  grid-template-rows: [overview] auto [gallery] auto [contact] auto [author] auto;
+  grid-template-rows: [overview] auto [gallery] auto [discography] auto [contact] auto [author] auto;
   grid-row-gap:2rem;
   align-items: center;
   justify-content: center;
@@ -233,6 +233,24 @@ main{
 .gallery_items__img{
   height: 10rem;
   margin: 0.5rem 0;
+}
+
+#discography{
+  grid-area: discography;
+  margin: auto;
+  background-color: #006c67;
+}
+
+.discography_items_container{
+  display: flex;
+  margin: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.discography_item{
+  color: white;
 }
 
 #contact{
@@ -382,6 +400,21 @@ main{
   .gallery_items__img{
     height: 20rem;
     margin: 0.5rem 0;
+  }
+}
+
+@media(min-width: 40rem){
+  #discography{
+    border-radius: 20px;
+    width: 95%;
+  }
+
+  .discography_items_container{
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
   }
 }
   

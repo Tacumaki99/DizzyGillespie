@@ -12,6 +12,10 @@ const nav__item = [
     name: 'Gallery',
   },
   {
+    href: '#discography',
+    name: 'Discography',
+  },
+  {
     href: '#contact',
     name: 'Contact',
   },
@@ -51,9 +55,10 @@ backdrop.addEventListener('click', function () {
 document
   .querySelector('.mobile-nav__item')
   .addEventListener('click', function () {
-    mobileNav.classList.remove('open');
-    backdrop.classList.remove('open');
+    mobileNav.style.display = 'none';
+    backdrop.style.display = 'none';
   });
+
 //mobileNav
 // Nav menu
 
@@ -119,6 +124,53 @@ for (let i in gallery_items__img) {
 //gallery
 
 //discography
+const $discography_item = $('.discography_items_container');
+const discography_items_albums = [
+  {
+    id: 1,
+    text: 'Afro',
+    year: 1954
+  },
+  {
+    id: 2,
+    text: 'Sonny Side Up',
+    year: 1959
+  },
+  {
+    id: 3,
+    text: 'Have Trumpet, Will Excite!',
+    year: 1959
+  },
+  {
+    id: 4,
+    text: 'Swing Low, Sweet Cadillac',
+    year: 1967
+  },
+  {
+    id: 5,
+    text: 'Bird and Diz',
+    year: 1952
+  },
+  {
+    id: 6,
+    text: 'For Musicians Only',
+    year: 1958
+  }
+];
+/*
+const discography_items_songs = [
+  {
+    text: 'Manteca theam',
+    written_by: 'Dizzy Gillespie, Chano Pozo and Gil Fuller',
+    parent_id: 1
+  }
+]
+*/
+for (let i in discography_items_albums) {
+  $discography_item.append(
+    `<div class="discography_item"><p>${discography_items_albums[i].text} | ${discography_items_albums[i].year}</p></div>`
+  );
+}
 //discography
 
 //contact
